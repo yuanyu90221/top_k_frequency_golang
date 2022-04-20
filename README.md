@@ -20,6 +20,7 @@ Given an integer array nums and an integer k, return the k most frequent element
 
 舉例來說：
 
+```
 nums:[] int{1, 1, 1, 2, 2, 3, 3, 4}
 
 bucket: [0] -> {}
@@ -31,6 +32,7 @@ bucket: [0] -> {}
         [6] -> {}
         [7] -> {}
         [8] -> {}
+```
 
 這樣在排序時， 就可以透過從最大出現的次數往後面找
 
