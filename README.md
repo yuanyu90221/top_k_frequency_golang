@@ -102,12 +102,13 @@ package top_k
 import "log"
 
 func topKFrequent(nums []int, k int) []int {
-	// step1 put all element into hashMap
+		// step1 put all eleemnt into hashMap
 	freq := make(map[int]int)
 	bucket := make([][]int, len(nums))
 	for _, val := range nums {
 		freq[val] += 1
 	}
+	// step2 透過 priority queue 來實作 sort
 	for key, count := range freq {
 		bucket[count-1] = append(bucket[count-1], key)
 	}
